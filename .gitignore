@@ -1,0 +1,18 @@
+# Visual Studio user settings
+.vs/
+*.user
+*.suo
+
+# Build output
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs and temporary files
+*.log
+*.tmp
