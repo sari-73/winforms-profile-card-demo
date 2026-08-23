@@ -1,0 +1,22 @@
+name: Build Windows Forms
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore solution
+        run: dotnet restore .\ControlExample\ControlExample.sln
+      - name: Build solution
+        run: dotnet build .\ControlExample\ControlExample.sln --configuration Release --no-restore
