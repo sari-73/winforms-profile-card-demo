@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch WinForms Profile Card",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-winforms-profile-card",
+      "program": "${workspaceFolder}/ControlExample/ControlExample/bin/Debug/net8.0-windows/ControlExample.exe",
+      "cwd": "${workspaceFolder}/ControlExample/ControlExample",
+      "stopAtEntry": false
+    }
+  ]
+}

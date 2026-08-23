@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-winforms-profile-card",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["build", "ControlExample/ControlExample.sln"],
+      "problemMatcher": "$msCompile",
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
